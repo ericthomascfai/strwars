@@ -16,9 +16,9 @@ void Princesse::seFaireKidnapper( MembreEmpire &me) {
 }
 
 void Princesse::seFaireLiberer(const Rebel &re) {
-    //à complèter avec les traitements de re
+
     etat=false;
-    parler("Merci");
+    parler("Merci "+re.quel_est_ton_nom());
 }
 
 void Princesse::changerRobe(const string &newcolor) {

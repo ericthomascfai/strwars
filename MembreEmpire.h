@@ -9,6 +9,7 @@
 #include "Humanoide.h"
 #include "Princesse.h"
 class Princesse;
+class Rebel;
 class MembreEmpire : public Humanoide{
 private:
     string rang;

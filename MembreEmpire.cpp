@@ -18,7 +18,7 @@ void MembreEmpire::kidnapper(Princesse &pr) {
 }
 
 void MembreEmpire::seFaireEmprisonner(const Rebel &re) {
-    //à compléter
+    parler("Je suis fait tu m'as eu "+re.quel_est_ton_nom());
     etat=true;
 }
 

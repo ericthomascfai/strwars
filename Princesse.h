@@ -10,6 +10,7 @@
 #include "Rebel.h"
 #include "MembreEmpire.h"
 class MembreEmpire;
+class Rebel;
 class Princesse: public Humanoide {
 private:
     string couleur_robe;

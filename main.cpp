@@ -13,5 +13,10 @@ int main() {
     p.changerRobe("Rose");
     MembreEmpire me=MembreEmpire("Darky");
     me.kidnapper(p);
+    Rebel rebel=Rebel("LUK");
+    rebel.coffrer(me);
+    rebel.liberer(p);
+    rebel.tirer(me);
+
     return 0;
 }
