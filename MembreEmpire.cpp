@@ -13,7 +13,7 @@ nbprincesses=0;
 
 void MembreEmpire::kidnapper(Princesse &pr) {
     nbprincesses++;
-    parler("Si tu n'es pas avec moi"+pr.quel_est_ton_nom()+"alors tu es contre moi !!" );
+    parler("Si tu n'es pas avec moi "+pr.quel_est_ton_nom()+" alors tu es contre moi !!" );
     pr.seFaireKidnapper(*this);
 }
 
