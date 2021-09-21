@@ -18,7 +18,7 @@ void Humanoide::boire() {
     parler("Ahhh!! un bon verre de "+boisson_favorite);
 }
 
-const string Humanoide::quel_est_ton_nom() {
+const string Humanoide::quel_est_ton_nom() const {
     return nom;
 }
 

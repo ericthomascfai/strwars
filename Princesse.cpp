@@ -3,14 +3,14 @@
 //
 
 #include "Princesse.h"
+#include "MembreEmpire.h"
 
 Princesse::Princesse(const string &nom, const string &couleurrobe): Humanoide(nom),couleur_robe(couleurrobe) {
 etat=false; //libre;
 }
 
-void Princesse::seFaireKidnapper(const MembreEmpire &me) {
+void Princesse::seFaireKidnapper( MembreEmpire &me) {
 
-    //à complèter avec les traitements de me
     etat=true;
     parler("Ahhhhhhhhhhhhhhhhhhhh!!!!!");
 }

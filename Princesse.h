@@ -9,7 +9,7 @@
 #include "Humanoide.h"
 #include "Rebel.h"
 #include "MembreEmpire.h"
-
+class MembreEmpire;
 class Princesse: public Humanoide {
 private:
     string couleur_robe;
@@ -17,7 +17,7 @@ private:
 
 public:
     Princesse(const string &nom,const string &couleurrobe);
-    void seFaireKidnapper(const MembreEmpire &me);
+    void seFaireKidnapper(MembreEmpire &me);
     void seFaireLiberer(const Rebel &re);
     void changerRobe(const string &newcolor);
 

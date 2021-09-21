@@ -11,5 +11,7 @@ int main() {
     Princesse p=Princesse("Leila","Blanche");
     p.sePresenter();
     p.changerRobe("Rose");
+    MembreEmpire me=MembreEmpire("Darky");
+    me.kidnapper(p);
     return 0;
 }
