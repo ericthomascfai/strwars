@@ -22,6 +22,7 @@ public:
     void kidnapper(Princesse &pr) ;
     void seFaireEmprisonner(const Rebel &re);
     const int quel_est_ta_recompense();
+    const string quel_est_ton_nom() const override;
 };
 
 

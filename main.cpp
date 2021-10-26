@@ -13,6 +13,7 @@ int main() {
     p.sePresenter();
     p.changerRobe("Rose");
     MembreEmpire me=MembreEmpire("Darky");
+    cout<<me.quel_est_ton_nom()<<endl;
     me.kidnapper(p);
     Rebel rebel=Rebel("LUK");
     rebel.coffrer(me);

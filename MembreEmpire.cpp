@@ -25,3 +25,7 @@ void MembreEmpire::seFaireEmprisonner(const Rebel &re) {
 const int MembreEmpire::quel_est_ta_recompense() {
     return recompense;
 }
+
+const string MembreEmpire::quel_est_ton_nom() const {
+    return Humanoide::quel_est_ton_nom()+" "+rang;
+}
