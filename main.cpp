@@ -9,6 +9,7 @@ int main() {
     h.sePresenter();
     h.boire();
     Princesse p=Princesse("Leila","Blanche");
+    cout<<p.quel_est_ton_nom()<<endl;
     p.sePresenter();
     p.changerRobe("Rose");
     MembreEmpire me=MembreEmpire("Darky");

@@ -17,7 +17,7 @@ public:
     Humanoide(const string &nom);
     void sePresenter();
     void boire();
-    const string quel_est_ton_nom() const ;
+    virtual const string quel_est_ton_nom() const ;
     void parler(const string &texte);
 
 };
