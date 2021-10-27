@@ -23,6 +23,8 @@ public:
     void seFaireEmprisonner(const Rebel &re);
     const int quel_est_ta_recompense();
     const string quel_est_ton_nom() const override;
+
+    void sePresenter() override;
 };
 
 

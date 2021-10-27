@@ -20,6 +20,9 @@ public:
     void coffrer(MembreEmpire &me);
     void liberer(Princesse &pr);
 
+    void sePresenter() override;
+
+
 };
 
 

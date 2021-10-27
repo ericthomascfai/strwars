@@ -12,13 +12,14 @@ using namespace std;
 class Humanoide {
 private:
     string nom;
+protected:
     string boisson_favorite;
 public:
     Humanoide(const string &nom);
-    void sePresenter();
+    virtual void sePresenter();
     void boire();
     virtual const string quel_est_ton_nom() const ;
-    void parler(const string &texte);
+    virtual void parler(const string &texte);
 
 };
 

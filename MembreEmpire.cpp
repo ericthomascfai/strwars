@@ -9,6 +9,7 @@ this->rang="soldat";
 recompense=100;
 etat=false; //libre
 nbprincesses=0;
+boisson_favorite="Vin de fleur";
 }
 
 void MembreEmpire::kidnapper(Princesse &pr) {
@@ -28,4 +29,9 @@ const int MembreEmpire::quel_est_ta_recompense() {
 
 const string MembreEmpire::quel_est_ton_nom() const {
     return Humanoide::quel_est_ton_nom()+" "+rang;
+}
+
+void MembreEmpire::sePresenter() {
+    Humanoide::sePresenter();
+    parler("mon rang est "+ rang+" et j'ai kidnappé "+to_string(nbprincesses)+" princesses, ma récompense est de "+ to_string(recompense)+" peggats");
 }

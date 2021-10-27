@@ -24,6 +24,8 @@ public:
 
     const string quel_est_ton_nom() const override;
 
+    void sePresenter() override;
+
 
 };
 
