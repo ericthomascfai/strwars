@@ -4,11 +4,19 @@
 
 #include <iostream>
 #include "Rebel.h"
+#include "Alliance.h"
 
-Rebel::Rebel(const string &nom) : Humanoide(nom) {
+
+Rebel::Rebel(const string &nom,Alliance &alliance) : Humanoide(nom) {
 this->adjectif="Padawan";
 popularite=0;
 boisson_favorite="Whisky";
+if(nom!="yoda") {
+    alliance.getLesrebels().push_back(*this);//ajoute le rebel dans l'alliance
+    parler("Je viens de rejoindre l'alliance");
+
+}
+
 }
 
 void Rebel::tirer(MembreEmpire &me) {

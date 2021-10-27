@@ -35,3 +35,7 @@ void MembreEmpire::sePresenter() {
     Humanoide::sePresenter();
     parler("mon rang est "+ rang+" et j'ai kidnappé "+to_string(nbprincesses)+" princesses, ma récompense est de "+ to_string(recompense)+" peggats");
 }
+
+int MembreEmpire::getRecompense() const {
+    return recompense;
+}

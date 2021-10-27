@@ -2,8 +2,10 @@
 #include "Humanoide.h"
 #include "Princesse.h"
 #include "Barman.h"
+#include "Yoda.h"
 
 int main() {
+    Alliance alliance=Alliance();
     Humanoide h=Humanoide("Human");
     cout<<h.quel_est_ton_nom()<<endl;
     h.parler("Hello");
@@ -17,7 +19,7 @@ int main() {
     me.sePresenter();
     cout<<me.quel_est_ton_nom()<<endl;
     me.kidnapper(p);
-    Rebel rebel=Rebel("LUK");
+    Rebel rebel=Rebel("LUK",alliance);
     rebel.sePresenter();
     cout<<rebel.quel_est_ton_nom()<<endl;
     rebel.coffrer(me);
@@ -27,6 +29,9 @@ int main() {
     barman.sePresenter();
     barman.servir(rebel);
     barman.parler("Salut");
+    Yoda yoda=Yoda("yoda",alliance);
+    yoda.sePresenter();
+    yoda.rechercher(me);
 
     return 0;
 }

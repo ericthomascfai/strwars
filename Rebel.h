@@ -8,16 +8,24 @@
 
 #include "Humanoide.h"
 #include "MembreEmpire.h"
+#include "Alliance.h"
+
 class MembreEmpire;
 class Princesse;
+class Alliance;
 class Rebel: public Humanoide {
 private:
+
+
     int popularite;
     string adjectif;
+
+
+
 public:
-    Rebel(const string &nom);
+    Rebel(const string &nom, Alliance &alliance);
     void tirer(MembreEmpire &me);
-    void coffrer(MembreEmpire &me);
+    virtual void coffrer(MembreEmpire &me);
     void liberer(Princesse &pr);
 
     void sePresenter() override;

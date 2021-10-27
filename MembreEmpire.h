@@ -24,6 +24,8 @@ public:
     const int quel_est_ta_recompense();
     const string quel_est_ton_nom() const override;
 
+    int getRecompense() const;
+
     void sePresenter() override;
 };
 

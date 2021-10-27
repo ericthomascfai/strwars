@@ -3,4 +3,4 @@ project(strwars)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(strwars main.cpp Humanoide.cpp Humanoide.h Princesse.cpp Princesse.h MembreEmpire.cpp MembreEmpire.h Rebel.cpp Rebel.h Barman.cpp Barman.h)
+add_executable(strwars main.cpp Humanoide.cpp Humanoide.h Princesse.cpp Princesse.h MembreEmpire.cpp MembreEmpire.h Rebel.cpp Rebel.h Barman.cpp Barman.h Alliance.cpp Alliance.h Yoda.cpp Yoda.h)
