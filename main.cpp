@@ -28,7 +28,7 @@ int main() {
     Barman barman=Barman("Joe");
     barman.sePresenter();
     barman.servir(rebel);
-    barman.parler("Salut");
+    barman.parler("Salut bob");
     Yoda yoda=Yoda("yoda",alliance);
     yoda.sePresenter();
     yoda.rechercher(me);
